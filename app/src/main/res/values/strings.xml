@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">GeoQuiz</string>
+
+    <!-- START PAGE -->
+    <string name="main_title">Geography\nquiz</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="start_quiz_button">start quiz</string>
+    <string name="credits_button">credits</string>
+
+    <!-- CREDITS PAGE -->
+    <string name="credits_description">Udacity - Android Basics \n\n© univ.bacc.inf. Marjana Bjelic \n- student from Croatia</string>
+    <string name="back_button">back</string>
+
+    <!-- QUESTION 1 -->
+    <string name="q1">What is the capital of Croatia?</string>
+    <string name="q1a1">Rijeka</string>
+    <string name="q1a2">Split</string>
+    <string name="q1a3">Zagreb</string>
+    <string name="q1a4">Dubrovnik</string>
+
+    <!-- QUESTION 2 -->
+    <string name="q2">How many continents are there?</string>
+    <string name="q2a1">Five</string>
+    <string name="q2a2">Six</string>
+    <string name="q2a3">Seven</string>
+    <string name="q2a4">Eight</string>
+
+    <!-- QUESTION 3 -->
+    <string name="q3">On what continent can you find Egypt?</string>
+    <string name="q3a1">Write your answer here...</string>
+    <string name="submit">submit</string>
+    <string name="q3_required">Answer is required!</string>
+    <string name="africa_lowcase">africa</string>
+    <string name="africa_caps">AFRICA</string>
+    <string name="africa_sentence">Africa</string>
+
+    <!-- QUESTION 4 -->
+    <string name="q4">Number of Earth\'s oceans?</string>
+    <string name="q4a1">Five</string>
+    <string name="q4a2">Six</string>
+    <string name="q4a3">Seven</string>
+    <string name="q4a4">Four</string>
+
+    <!-- QUESTION 5 -->
+    <string name="q5">What is the most populated continent in the world?</string>
+    <string name="q5a1">North America</string>
+    <string name="q5a2">Asia</string>
+    <string name="q5a3">Europe</string>
+    <string name="q5a4">America</string>
+
+    <!-- QUESTION 6 -->
+    <string name="q6">Complete the sentence: US consists of __ state(s), __ federal district(s), __ territories.</string>
+    <string name="q6a1">50, 1, 5</string>
+    <string name="q6a2">50, 1, 4</string>
+    <string name="q6a3">50, 2, 4</string>
+    <string name="q6a4">51, 1, 5</string>
+
+    <!-- QUESTION 7 -->
+    <string name="q7">How many internationally recognised sovereign states are there in Europe?</string>
+    <string name="q7a1">45</string>
+    <string name="q7a2">55</string>
+    <string name="q7a3">40</string>
+    <string name="q7a4">50</string>
+
+    <!-- QUESTION 8 -->
+    <string name="q8">Which of these four volcanoes is located in Naples, Italy?</string>
+    <string name="q8a1">Stromboli</string>
+    <string name="q8a2">Mount Etna</string>
+    <string name="q8a3">Mount Vesuvius</string>
+    <string name="q8a4">Santa Maria</string>
+
+    <!-- QUESTION 9 -->
+    <string name="q9">The Dead Sea is a salt lake located in Africa and bordered by Israel to the east and Egypt to the west.</string>
+    <string name="yes">true</string>
+    <string name="no">false</string>
+
+    <!-- QUESTION 10 -->
+    <string name="q10">Which of these four countries became founders of NATO by signing a North Atlantic Treaty in 1949?</string>
+    <string name="q10a1">United Kingdom</string>
+    <string name="q10a2">Croatia</string>
+    <string name="q10a3">United States of America</string>
+    <string name="q10a4">Greece</string>
+
+    <!-- RESULTS BUTTON -->
+    <string name="results_button">Results</string>
+
+    <!-- REPLAY BUTTON -->
+    <string name="replay_button">replay</string>
+
+    <!-- EXIT BUTTON -->
+    <string name="exit_button">exit</string>
+
+    <!-- FINAL RESULTS -->
+    <string name="congratulations_title">Congratulations!</string>
+    <string name="correct_answers">Correct answers: </string>
+    <string name="incorrect_answers">Incorrect answers: </string>
+
+    <!-- NAME REQUIRED -->
+    <string name="name_required">Name is required!</string>
+
+    <!-- WRONG ANSWER/CORRECT ANSWER -->
+    <string name="wrong_answer">WRONG ANSWER!</string>
+    <string name="correct_answer">CORRECT ANSWER!</string>
+
+    <!-- DIALOG - QUIZ FINISHED -->
+    <string name="congratulations_dialog_title">CONGRATULATIONS!</string>
+    <string name="dialog_message">\nBravo! \nYou finished the quiz! \nClick for results... \n</string>
+
+    <!-- SCORE -->
+    <string name="thank_you">THANK YOU!</string>
+    <string name="low_score">LOW SCORE 0-3</string>
+    <string name="low_score_description">, your geography knowledge is low. \nThink about studying a little bit hehe :) \n</string>
+    <string name="medium_score">MEDIUM SCORE 4-7</string>
+    <string name="medium_score_description">, your geography knowledge is medium. \nKeep up the good work! \n</string>
+    <string name="high_score">HIGH SCORE 8-10</string>
+    <string name="high_score_description">, your geography knowledge is high! \nWOW! Where is your limit?! \n</string>
+
+    <!-- SHARE -->
+    <string name="share_title">Share your Geography Quiz results!</string>
+    <string name="share_text_hey">Hey! I\'m </string>
+    <string name="share_text_results"> and these are my Geography Quiz results: </string>
+    <string name="share_text_bye">Ok, bye!</string>
+</resources>

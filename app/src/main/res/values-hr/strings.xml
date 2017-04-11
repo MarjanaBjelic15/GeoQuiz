@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GeoQuiz</string>
+
+    <!-- START PAGE -->
+    <string name="main_title">Geography quiz</string>
+    <string name="enter_your_name">Unesi svoje ime</string>
+    <string name="start_quiz_button">započni igru</string>
+    <string name="credits_button">zasluge</string>
+    <string name="name_required">Ime je obavezno!</string>
+
+    <!-- CREDITS PAGE -->
+    <string name="credits_description">Udacity - Android Basics \n\n© univ.bacc.inf. Marjana Bjelić \n- studentica iz Hrvatske</string>
+    <string name="back_button">natrag</string>
+
+    <!-- QUESTION 1 -->
+    <string name="q1">Koji je glavni grad Hrvatske?</string>
+    <string name="q1a1">Rijeka</string>
+    <string name="q1a2">Split</string>
+    <string name="q1a3">Zagreb</string>
+    <string name="q1a4">Dubrovnik</string>
+
+    <!-- QUESTION 2 -->
+    <string name="q2">Koliko ima kontinenata na Zemlji?</string>
+    <string name="q2a1">Pet</string>
+    <string name="q2a2">Šest</string>
+    <string name="q2a3">Sedam</string>
+    <string name="q2a4">Osam</string>
+
+    <!-- QUESTION 3 -->
+    <string name="q3">Na kojem se kontinentu nalazi Egipat?</string>
+    <string name="q3a1">Ovdje upišite odgovor...</string>
+    <string name="submit">pošalji</string>
+    <string name="q3_required">Odgovor je obavezan!</string>
+    <string name="africa_caps">AFRIKA</string>
+    <string name="africa_lowcase">afrika</string>
+    <string name="africa_sentence">Afrika</string>
+
+    <!-- QUESTION 4 -->
+    <string name="q4">Koliko ima oceana na Zemlji?</string>
+    <string name="q4a1">Pet</string>
+    <string name="q4a2">Šest</string>
+    <string name="q4a3">Sedam</string>
+    <string name="q4a4">Četiri</string>
+
+    <!-- QUESTION 5 -->
+    <string name="q5">Koji je najnaseljeniji kontinent na svijetu?</string>
+    <string name="q5a1">Sjeverna Amerika</string>
+    <string name="q5a2">Azija</string>
+    <string name="q5a3">Europa</string>
+    <string name="q5a4">Amerika</string>
+
+    <!-- QUESTION 6 -->
+    <string name="q6">Dopuni rečenicu: SAD se sastoji od __ država, __ federalnih okruga, __ teritorija.</string>
+    <string name="q6a1">50, 1, 5</string>
+    <string name="q6a2">50, 1, 4</string>
+    <string name="q6a3">50, 2, 4</string>
+    <string name="q6a4">51, 1, 5</string>
+
+    <!-- QUESTION 7 -->
+    <string name="q7">Koliko se međunarodno priznatih suverenih država nalazi u Europi?</string>
+    <string name="q7a1">45</string>
+    <string name="q7a2">55</string>
+    <string name="q7a3">40</string>
+    <string name="q7a4">50</string>
+
+    <!-- QUESTION 8 -->
+    <string name="q8">Koji se od ova četiri vulkana povezuje s Napulj, Italija?</string>
+    <string name="q8a1">Stromboli</string>
+    <string name="q8a2">Mount Etna</string>
+    <string name="q8a3">Mount Vesuvius</string>
+    <string name="q8a4">Santa Maria</string>
+
+    <!-- QUESTION 9 -->
+    <string name="q9">Mrtvo more je slano jezero u Africi koje graniči s Izraelom na istoku i s Egiptom na zapadu.</string>
+    <string name="yes">točno</string>
+    <string name="no">netočno</string>
+
+    <!-- QUESTION 10 -->
+    <string name="q10">Koje su od navedenih država osnovale NATO potpisivanjem Sjevernoatlantskog ugovora 1949. godine?</string>
+    <string name="q10a1">Velika Britanija</string>
+    <string name="q10a2">Hrvatska</string>
+    <string name="q10a3">Sjedinjene Američke Države</string>
+    <string name="q10a4">Grčka</string>
+
+    <!-- RESULTS BUTTON -->
+    <string name="results_button">Rezultati</string>
+
+    <!-- REPLAY BUTTON -->
+    <string name="replay_button">igraj</string>
+
+    <!-- EXIT BUTTON -->
+    <string name="exit_button">izlaz</string>
+
+    <!-- FINAL RESULTS -->
+    <string name="congratulations_title">Cestitke!</string>
+    <string name="correct_answers">Točni odgovori: </string>
+    <string name="incorrect_answers">Netočni odgovori: </string>
+
+    <!-- WRONG ANSWER/CORRECT ANSWER -->
+    <string name="wrong_answer">NETOČAN ODGOVOR!</string>
+    <string name="correct_answer">TOČAN ODGOVOR!</string>
+
+    <!-- DIALOG - QUIZ FINISHED -->
+    <string name="congratulations_dialog_title">ČESTITKE!</string>
+    <string name="dialog_message">\nBravo! \nKviz je završen! \nKlikni za vidjeti rezultate... \n</string>
+
+    <!-- SCORE -->
+    <string name="thank_you">HVALA!</string>
+    <string name="low_score">NIZAK REZULTAT 0-3</string>
+    <string name="low_score_description">, tvoje znanje geografije je loše. \nRazmisli malo o učenju hehe :) \n</string>
+    <string name="medium_score">SREDNJI REZULTAT 4-7</string>
+    <string name="medium_score_description">, tvoje znanje geografije je srednje. \nSamo tako nastavi! \n</string>
+    <string name="high_score">VISOK REZULTAT 8-10</string>
+    <string name="high_score_description">, tvoje znanje geografije je visoko! \nWOW! Gdje ti je kraj?! \n</string>
+
+    <!-- SHARE -->
+    <string name="share_title">Podijeli svoje Geography Quiz rezultate!</string>
+    <string name="share_text_hey">Hej! Ja sam </string>
+    <string name="share_text_results"> i ovo su moji Geography Quiz rezultati: </string>
+    <string name="share_text_bye">Ok, bok!</string>
+
+</resources>
