@@ -49,30 +49,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void startQuiz (View view) {
-        // make edit text field a required field - method1
-
-        /* Button startQuiz = (Button)findViewById(R.id.button_startQuiz);
-        startQuiz.setOnClickListener( new View.OnClickListener() {
-            public void onClick(View v) {
-                EditText userName = (EditText) findViewById(R.id.enter_your_name);
-                if(userName.getText().toString().trim().equals("")){
-                    // Toast if wanted
-                    userName.setError( "Name is required!" );
-                } else {
-                    View startScreen = findViewById(R.id.linearlayout_start_screen);
-                    startScreen.setVisibility(View.GONE);
-
-                    // hide keyboard
-                    InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-                    imm.hideSoftInputFromWindow(startScreen.getWindowToken(), 0);
-
-                    View showQuestionOne = findViewById(R.id.linearlayout_question1);
-                    showQuestionOne.setVisibility(View.VISIBLE);
-                }
-            }
-        }); */
-
-        // make edit text field a required field - method2
+        // make edit text field a required field
         EditText userName = (EditText) findViewById(R.id.enter_your_name);
         String sUsername = userName.getText().toString();
         if (sUsername.matches("")) {
@@ -316,7 +293,7 @@ public class MainActivity extends AppCompatActivity {
      *  ---- QUESTION 3 ANSWERS ----
      */
     public void questionThreeAnswer1 (View view) {
-        // make edit text field a required field - method2
+        // make edit text field a required field
         EditText q3answer = (EditText) findViewById(R.id.edittext_question3);
         String question3answer = q3answer.getText().toString();
         if (question3answer.equals(getResources().getString(R.string.africa_sentence)) || question3answer.equals(getResources().getString(R.string.africa_lowcase)) || question3answer.equals(getResources().getString(R.string.africa_caps))) {
