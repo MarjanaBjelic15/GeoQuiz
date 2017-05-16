@@ -3,4 +3,13 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!-- Geography quiz title -->
+    <color name="GeographyQuizTitle">#1b5e20</color>
+
+    <!-- Credits - green background -->
+    <color name="GreenBackground">#991b5e20</color>
+
+    <!-- Share button background -->
+    <color name="ShareButtonBackground">#00ffffff</color>
 </resources>

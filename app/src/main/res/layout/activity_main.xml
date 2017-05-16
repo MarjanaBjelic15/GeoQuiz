@@ -24,38 +24,24 @@
                 android:id="@+id/textview_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="20dp"
-                android:textSize="50sp"
-                android:textAllCaps="true"
-                android:scaleX="1"
-                android:textAlignment="center"
-                android:textColor="#1b5e20"
+                style="@style/GeographyQuizTitle"
                 android:text="@string/main_title" />
             <!-- ENTER YOUR NAME -->
             <EditText
                 android:id="@+id/enter_your_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:focusableInTouchMode="true"
-                android:textAlignment="center"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="30dp"
-                android:hint="@string/enter_your_name"
-                android:inputType="textCapWords" />
+                style="@style/EnterYourName"
+                android:hint="@string/enter_your_name" />
             <!-- START QUIZ BUTTON -->
             <Button
                 android:id="@+id/button_startQuiz"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button_start_quiz"
-                android:layout_marginBottom="15dp"
-                android:layout_marginRight="100dp"
-                android:layout_marginLeft="100dp"
+                android:textColor="@color/GeographyQuizTitle"
+                style="@style/StartQuizCreditsButtons"
                 android:onClick="startQuiz"
-                android:textSize="18sp"
-                android:textColor="#1b5e20"
                 android:text="@string/start_quiz_button" />
             <!-- CREDITS BUTTON -->
             <Button
@@ -63,11 +49,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button_credits"
-                android:layout_marginBottom="15dp"
-                android:layout_marginRight="100dp"
-                android:layout_marginLeft="100dp"
-                android:textSize="18sp"
                 android:textColor="#ffffff"
+                style="@style/StartQuizCreditsButtons"
                 android:onClick="credits"
                 android:text="@string/credits_button" />
         </LinearLayout>
@@ -87,26 +70,22 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_marginTop="150dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp" >
+                android:layout_marginTop="@dimen/margin150"
+                android:layout_marginBottom="@dimen/marginBottom20"
+                android:layout_marginLeft="@dimen/margin30"
+                android:layout_marginRight="@dimen/margin30" >
                 <!-- GREEN BACKGROUND -->
                 <View
                     android:id="@+id/view_green_window"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#991b5e20" />
+                    android:background="@color/GreenBackground" />
                 <!-- CREDITS TEXT -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:textSize="18sp"
-                    android:layout_marginLeft="20dp"
+                    style="@style/CreditsText"
                     android:layout_alignLeft="@id/view_green_window"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true"
                     android:text="@string/credits_description" />
             </RelativeLayout>
             <!-- BACK BUTTON -->
@@ -114,11 +93,7 @@
                 android:id="@+id/button_back"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="130dp"
-                android:layout_marginRight="130dp"
-                android:textColor="#1b5e20"
-                android:textSize="18sp"
-                android:background="@drawable/button_start_quiz"
+                style="@style/CreditsBackButton"
                 android:onClick="startScreen"
                 android:text="@string/back_button" />
         </LinearLayout>
@@ -138,21 +113,15 @@
             <!-- QUESTION 1 -->
             <View
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="35dp"
+                android:layout_height="@dimen/questionView180"
+                android:layout_marginBottom="@dimen/margin35"
                 android:background="@drawable/zagreb" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin35"
                 android:text="@string/q1"
-                android:layout_marginLeft="45dp"
-                android:layout_marginRight="45dp"
-                android:layout_marginBottom="35dp"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:textStyle="italic"
-                android:scaleX="1.1"
-                android:textColor="@android:color/black" />
+                style="@style/QuestionOneText" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -163,18 +132,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q1a1"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionOneAnswer1" />
                 <!-- Q1 - ANSWER 2 -->
                 <Button
@@ -182,18 +140,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q1a2"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionOneAnswer2" />
                 <!-- Q1 - ANSWER 3 -->
                 <Button
@@ -201,18 +148,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q1a3"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_correct"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswerCorrect"
                     android:onClick="questionOneAnswer3" />
                 <!-- Q1 - ANSWER 4 -->
                 <Button
@@ -220,35 +156,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q1a4"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionOneAnswer4" />
             </LinearLayout>
             <!-- NEXT QUESTION BUTTON -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/margin15"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal" >
                 <ImageButton
                     android:id="@+id/imagebutton_next_question1"
                     android:visibility="gone"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/margin30"
+                    style="@style/NextQuestionButton"
                     android:src="@drawable/navigate_next"
-                    android:background="@android:color/white"
                     android:onClick="questionTwo" />
             </LinearLayout>
         </LinearLayout>
@@ -268,21 +192,15 @@
             <!-- QUESTION 2 -->
             <View
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="25dp"
+                android:layout_height="@dimen/questionView180"
+                android:layout_marginBottom="@dimen/margin25"
                 android:background="@drawable/earth_from_space" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/q2"
-                android:layout_marginLeft="45dp"
-                android:layout_marginRight="45dp"
-                android:layout_marginBottom="25dp"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:textStyle="italic"
-                android:scaleX="1.1"
-                android:textColor="@android:color/black" />
+                android:layout_marginBottom="@dimen/margin25"
+                style="@style/QuestionOneText" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -293,18 +211,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q2a1"
-                    android:background="@drawable/button_wrong"
-                    android:textColor="@android:color/black"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionTwoAnswer1" />
                 <!-- Q2 - ANSWER 2 -->
                 <Button
@@ -312,18 +219,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q2a2"
-                    android:background="@drawable/button_wrong"
-                    android:textColor="@android:color/black"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionTwoAnswer2" />
                 <!-- Q2 - ANSWER 3 -->
                 <Button
@@ -331,18 +227,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q2a3"
-                    android:background="@drawable/button_correct"
-                    android:textColor="@android:color/black"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswerCorrect"
                     android:onClick="questionTwoAnswer3" />
                 <!-- Q2 - ANSWER 4 -->
                 <Button
@@ -350,35 +235,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q2a4"
-                    android:background="@drawable/button_wrong"
-                    android:textColor="@android:color/black"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionTwoAnswer4" />
             </LinearLayout>
             <!-- NEXT QUESTION BUTTON -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/margin15"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal" >
                 <ImageButton
                     android:id="@+id/imagebutton_next_question2"
                     android:visibility="gone"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/margin30"
+                    style="@style/NextQuestionButton"
                     android:src="@drawable/navigate_next"
-                    android:background="@android:color/white"
                     android:onClick="questionThree" />
             </LinearLayout>
         </LinearLayout>
@@ -398,21 +271,15 @@
             <!-- QUESTION 3 -->
             <View
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="25dp"
+                android:layout_height="@dimen/questionView180"
+                android:layout_marginBottom="@dimen/margin25"
                 android:background="@drawable/egypt" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/q3"
-                android:layout_marginLeft="45dp"
-                android:layout_marginRight="45dp"
-                android:layout_marginBottom="25dp"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:textStyle="italic"
-                android:scaleX="1.1"
-                android:textColor="@android:color/black" />
+                style="@style/QuestionOneText"
+                android:layout_marginBottom="@dimen/margin25" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -422,22 +289,14 @@
                     android:id="@+id/edittext_question3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:focusableInTouchMode="true"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginTop="30dp"
-                    android:hint="@string/q3a1"
-                    android:inputType="textCapWords" />
+                    style="@style/QuestionThreeAnswerEditText"
+                    android:hint="@string/q3a1" />
                 <!-- SUBMIT BUTTON -->
                 <Button
                     android:id="@+id/button_submit_q3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_view"
-                    android:layout_marginRight="120dp"
-                    android:layout_marginLeft="120dp"
+                    style="@style/QuestionThreeSubmitButton"
                     android:text="@string/submit"
                     android:onClick="questionThreeAnswer1" />
             </LinearLayout>
@@ -445,17 +304,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="85dp"
+                android:layout_marginTop="@dimen/margin85"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal" >
                 <ImageButton
                     android:id="@+id/imagebutton_next_question3"
                     android:visibility="gone"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/margin30"
+                    style="@style/NextQuestionButton"
                     android:src="@drawable/navigate_next"
-                    android:background="@android:color/white"
                     android:onClick="questionFour" />
             </LinearLayout>
         </LinearLayout>
@@ -475,21 +333,15 @@
             <!-- QUESTION 4 -->
             <View
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="35dp"
+                android:layout_height="@dimen/questionView180"
+                android:layout_marginBottom="@dimen/margin35"
                 android:background="@drawable/flat_ocean" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/q4"
-                android:layout_marginLeft="45dp"
-                android:layout_marginRight="45dp"
-                android:layout_marginBottom="35dp"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:textStyle="italic"
-                android:scaleX="1.1"
-                android:textColor="@android:color/black" />
+                style="@style/QuestionOneText"
+                android:layout_marginBottom="@dimen/margin35" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -500,18 +352,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q4a4"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionFourAnswer1" />
                 <!-- Q4 - ANSWER 2 -->
                 <Button
@@ -519,18 +360,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q4a1"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_correct"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswerCorrect"
                     android:onClick="questionFourAnswer2" />
                 <!-- Q4 - ANSWER 3 -->
                 <Button
@@ -538,18 +368,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q4a2"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionFourAnswer3" />
                 <!-- Q4 - ANSWER 4 -->
                 <Button
@@ -557,35 +376,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q4a3"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionFourAnswer4" />
             </LinearLayout>
             <!-- NEXT QUESTION BUTTON -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/margin15"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal" >
                 <ImageButton
                     android:id="@+id/imagebutton_next_question4"
                     android:visibility="gone"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/margin30"
+                    style="@style/NextQuestionButton"
                     android:src="@drawable/navigate_next"
-                    android:background="@android:color/white"
                     android:onClick="questionFive" />
             </LinearLayout>
         </LinearLayout>
@@ -605,21 +412,15 @@
             <!-- QUESTION 5 -->
             <View
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="25dp"
+                android:layout_height="@dimen/questionView180"
+                android:layout_marginBottom="@dimen/margin25"
                 android:background="@drawable/people" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/q5"
-                android:layout_marginLeft="45dp"
-                android:layout_marginRight="45dp"
-                android:layout_marginBottom="25dp"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:textStyle="italic"
-                android:scaleX="1.1"
-                android:textColor="@android:color/black" />
+                style="@style/QuestionOneText"
+                android:layout_marginBottom="@dimen/margin25" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -630,18 +431,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q5a1"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionFiveAnswer1" />
                 <!-- Q5 - ANSWER 2 -->
                 <Button
@@ -649,18 +439,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q5a2"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_correct"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswerCorrect"
                     android:onClick="questionFiveAnswer2" />
                 <!-- Q5 - ANSWER 3 -->
                 <Button
@@ -668,18 +447,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q5a3"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionFiveAnswer3" />
                 <!-- Q5 - ANSWER 4 -->
                 <Button
@@ -687,35 +455,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q5a4"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionFiveAnswer4" />
             </LinearLayout>
             <!-- NEXT QUESTION BUTTON -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/margin15"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal" >
                 <ImageButton
                     android:id="@+id/imagebutton_next_question5"
                     android:visibility="gone"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/margin30"
+                    style="@style/NextQuestionButton"
                     android:src="@drawable/navigate_next"
-                    android:background="@android:color/white"
                     android:onClick="questionSix" />
             </LinearLayout>
         </LinearLayout>
@@ -735,21 +491,15 @@
             <!-- QUESTION 6 -->
             <View
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="15dp"
+                android:layout_height="@dimen/questionView180"
+                android:layout_marginBottom="@dimen/margin15"
                 android:background="@drawable/usa_view" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/q6"
-                android:layout_marginLeft="45dp"
-                android:layout_marginRight="45dp"
-                android:layout_marginBottom="15dp"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:textStyle="italic"
-                android:scaleX="1.1"
-                android:textColor="@android:color/black" />
+                style="@style/QuestionOneText"
+                android:layout_marginBottom="@dimen/margin15" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -760,18 +510,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q6a1"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_correct"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswerCorrect"
                     android:onClick="questionSixAnswer1" />
                 <!-- Q6 - ANSWER 2 -->
                 <Button
@@ -779,18 +518,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q6a2"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionSixAnswer2" />
                 <!-- Q6 - ANSWER 3 -->
                 <Button
@@ -798,18 +526,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q6a3"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionSixAnswer3" />
                 <!-- Q6 - ANSWER 4 -->
                 <Button
@@ -817,35 +534,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q6a4"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionSixAnswer4" />
             </LinearLayout>
             <!-- NEXT QUESTION BUTTON -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/margin15"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal" >
                 <ImageButton
                     android:id="@+id/imagebutton_next_question6"
                     android:visibility="gone"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/margin30"
+                    style="@style/NextQuestionButton"
                     android:src="@drawable/navigate_next"
-                    android:background="@android:color/white"
                     android:onClick="questionSeven" />
             </LinearLayout>
         </LinearLayout>
@@ -865,21 +570,15 @@
             <!-- QUESTION 7 -->
             <View
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="15dp"
+                android:layout_height="@dimen/questionView180"
+                android:layout_marginBottom="@dimen/margin15"
                 android:background="@drawable/europe" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/q7"
-                android:layout_marginLeft="45dp"
-                android:layout_marginRight="45dp"
-                android:layout_marginBottom="15dp"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:textStyle="italic"
-                android:scaleX="1.1"
-                android:textColor="@android:color/black" />
+                style="@style/QuestionOneText"
+                android:layout_marginBottom="@dimen/margin15" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -890,18 +589,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q7a1"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionSevenAnswer1" />
                 <!-- Q7 - ANSWER 2 -->
                 <Button
@@ -909,18 +597,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q7a2"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionSevenAnswer2" />
                 <!-- Q7 - ANSWER 3 -->
                 <Button
@@ -928,18 +605,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q7a3"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionSevenAnswer3" />
                 <!-- Q7 - ANSWER 4 -->
                 <Button
@@ -947,35 +613,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q7a4"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_correct"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswerCorrect"
                     android:onClick="questionSevenAnswer4" />
             </LinearLayout>
             <!-- NEXT QUESTION BUTTON -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/margin15"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal" >
                 <ImageButton
                     android:id="@+id/imagebutton_next_question7"
                     android:visibility="gone"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/margin30"
+                    style="@style/NextQuestionButton"
                     android:src="@drawable/navigate_next"
-                    android:background="@android:color/white"
                     android:onClick="questionEight" />
             </LinearLayout>
         </LinearLayout>
@@ -995,21 +649,15 @@
             <!-- QUESTION 8 -->
             <View
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="25dp"
+                android:layout_height="@dimen/questionView180"
+                android:layout_marginBottom="@dimen/margin25"
                 android:background="@drawable/mount_vesuvius" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/q8"
-                android:layout_marginLeft="45dp"
-                android:layout_marginRight="45dp"
-                android:layout_marginBottom="25dp"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:textStyle="italic"
-                android:scaleX="1.1"
-                android:textColor="@android:color/black" />
+                style="@style/QuestionOneText"
+                android:layout_marginBottom="@dimen/margin25" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -1020,18 +668,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q8a1"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionEightAnswer1" />
                 <!-- Q8 - ANSWER 2 -->
                 <Button
@@ -1039,18 +676,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q8a2"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionEightAnswer2" />
                 <!-- Q8 - ANSWER 3 -->
                 <Button
@@ -1058,18 +684,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q8a3"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_correct"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswerCorrect"
                     android:onClick="questionEightAnswer3" />
                 <!-- Q8 - ANSWER 4 -->
                 <Button
@@ -1077,41 +692,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q8a4"
-                    android:textColor="@android:color/black"
-                    android:background="@drawable/button_wrong"
-                    android:textAllCaps="false"
-                    android:textSize="17sp"
-                    android:gravity="center_vertical"
-                    android:textAlignment="center"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingLeft="0dp"
+                    style="@style/QuestionOneAnswersIncorrect"
                     android:onClick="questionEightAnswer4" />
             </LinearLayout>
             <!-- RESULTS BUTTON -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="@dimen/margin5"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal" >
                 <Button
                     android:id="@+id/button_finalResults"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:background="@drawable/rounded_view"
                     android:visibility="gone"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:layout_gravity="center_horizontal"
-                    android:textColor="#000000"
-                    android:paddingLeft="35dp"
-                    android:paddingRight="35dp"
-                    android:paddingBottom="0dp"
-                    android:paddingTop="0dp"
+                    style="@style/ResultsButton"
                     android:onClick="finalResults"
                     android:text="@string/results_button" />
             </LinearLayout>
@@ -1132,33 +728,27 @@
             <!-- QUESTION 9 -->
             <View
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="25dp"
+                android:layout_height="@dimen/questionView180"
+                android:layout_marginBottom="@dimen/margin25"
                 android:background="@drawable/dead_sea" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/q9"
-                android:layout_marginLeft="45dp"
-                android:layout_marginRight="45dp"
-                android:layout_marginBottom="25dp"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:textStyle="italic"
-                android:scaleX="1.1"
-                android:textColor="@android:color/black" />
+                style="@style/QuestionOneText"
+                android:layout_marginBottom="@dimen/margin25" />
             <!-- QUESTION 9 ANSWERS -->
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/marginBottom20"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
                 <RadioButton
                     android:id="@+id/yes_radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/margin5"
                     android:text="@string/yes"
                     android:textAppearance="?android:textAppearanceMedium"
                     android:onClick="questionNineAnswer1" />
@@ -1174,17 +764,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="@dimen/margin90"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal" >
                 <ImageButton
                     android:id="@+id/imagebutton_next_question9"
                     android:visibility="gone"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/margin30"
+                    style="@style/NextQuestionButton"
                     android:src="@drawable/navigate_next"
-                    android:background="@android:color/white"
                     android:onClick="questionNine" />
             </LinearLayout>
         </LinearLayout>
@@ -1204,25 +793,19 @@
             <!-- QUESTION 10 -->
             <View
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginBottom="15dp"
+                android:layout_height="@dimen/questionView180"
+                android:layout_marginBottom="@dimen/margin15"
                 android:background="@drawable/nato" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/q10"
-                android:layout_marginLeft="45dp"
-                android:layout_marginRight="45dp"
-                android:layout_marginBottom="15dp"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:textStyle="italic"
-                android:scaleX="1.1"
-                android:textColor="@android:color/black" />
+                style="@style/QuestionOneText"
+                android:layout_marginBottom="@dimen/margin15" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
+                android:layout_marginLeft="@dimen/margin60"
                 android:layout_marginRight="0dp"
                 android:orientation="vertical">
                 <!-- Q10 - ANSWER 1 -->
@@ -1230,60 +813,53 @@
                     android:id="@+id/checkbox_question10_answer1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="@string/q10a1"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    style="@style/QuestionAnswerCheckbox"
+                    android:text="@string/q10a1" />
                 <!-- Q10 - ANSWER 2 -->
                 <CheckBox
                     android:id="@+id/checkbox_question10_answer2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="@string/q10a2"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    style="@style/QuestionAnswerCheckbox"
+                    android:text="@string/q10a2" />
                 <!-- Q10 - ANSWER 3 -->
                 <CheckBox
                     android:id="@+id/checkbox_question10_answer3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="@string/q10a3"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    style="@style/QuestionAnswerCheckbox"
+                    android:text="@string/q10a3" />
                 <!-- Q10 - ANSWER 4 -->
                 <CheckBox
                     android:id="@+id/checkbox_question10_answer4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="@string/q10a4"
-                    android:textAppearance="?android:textAppearanceMedium" />
+                    style="@style/QuestionAnswerCheckbox"
+                    android:text="@string/q10a4" />
             </LinearLayout>
             <!-- SUBMIT BUTTON -->
             <Button
                 android:id="@+id/button_submit_q10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/rounded_view"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="115dp"
-                android:layout_marginLeft="115dp"
+                style="@style/QuestionThreeSubmitButton"
+                android:layout_marginTop="@dimen/margin15"
                 android:text="@string/submit"
                 android:onClick="questionTenAnswers" />
             <!-- NEXT QUESTION BUTTON -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/margin10"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal" >
                 <ImageButton
                     android:id="@+id/imagebutton_next_question10"
                     android:visibility="gone"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/margin30"
+                    style="@style/NextQuestionButton"
                     android:src="@drawable/navigate_next"
-                    android:background="@android:color/white"
                     android:onClick="questionTen" />
             </LinearLayout>
         </LinearLayout>
@@ -1305,73 +881,62 @@
                 android:id="@+id/textview_congratulations"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:textColor="#ffffff"
-                android:textSize="55sp"
-                android:textStyle="bold"
-                android:layout_marginTop="45dp"
-                android:layout_marginBottom="5dp"
+                style="@style/CongratulationsText"
                 android:text="@string/congratulations_title" />
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="@dimen/margin70"
+                android:layout_marginTop="@dimen/marginBottom20"
                 android:layout_marginBottom="0dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp" >
+                android:layout_marginLeft="@dimen/margin50"
+                android:layout_marginRight="@dimen/margin50" >
                 <!-- GREEN BACKGROUND -->
                 <View
                     android:id="@+id/view_results"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#991b5e20" />
+                    android:background="@color/GreenBackground" />
                 <!-- NUMBER OF CORRECT / INCORRECT ANSWERS -->
                 <LinearLayout
                     android:id="@+id/linearlayout_correct_incorrect"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="@dimen/marginBottom20"
                     android:orientation="vertical" >
                     <TextView
                         android:id="@+id/textview_yourScore"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#ffffff"
-                        android:textSize="15sp"
-                        android:textStyle="italic"
+                        style="@style/NumberOfAnswers"
                         android:text="@string/correct_answers" />
                     <TextView
                         android:id="@+id/textview_yourScore1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#ffffff"
-                        android:textSize="15sp"
-                        android:textStyle="italic"
+                        style="@style/NumberOfAnswers"
                         android:text="@string/incorrect_answers" />
                 </LinearLayout>
                 <!-- SHARE BUTTON -->
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
+                    style="@style/ShareButton"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"
                     android:src="@drawable/ic_share"
-                    android:background="#00ffffff"
                     android:onClick="shareIntent" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp" >
+                android:layout_marginTop="@dimen/margin30" >
                 <!-- TROPHY IMAGE -->
                 <ImageView
                     android:id="@+id/imageview_trophy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="@dimen/margin30"
                     android:src="@drawable/trophy_win" />
                 <!-- REPLAY BUTTON -->
                 <Button
@@ -1380,16 +945,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignLeft="@id/imageview_trophy"
                     android:layout_alignBottom="@id/imageview_trophy"
-                    android:background="@drawable/button_start_quiz"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginLeft="-60dp"
-                    android:layout_marginRight="0dp"
-                    android:layout_marginBottom="25dp"
-                    android:paddingRight="10dp"
-                    android:paddingLeft="10dp"
+                    style="@style/ReplayButton"
                     android:onClick="replayApp"
-                    android:textStyle="bold"
-                    android:textColor="#1b5e20"
                     android:text="@string/replay_button" />
                 <!-- EXIT GAME BUTTON -->
                 <Button
@@ -1398,16 +955,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignRight="@id/imageview_trophy"
                     android:layout_alignBottom="@id/imageview_trophy"
-                    android:background="@drawable/button_start_quiz"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginRight="-60dp"
-                    android:layout_marginBottom="25dp"
-                    android:paddingRight="10dp"
-                    android:paddingLeft="10dp"
+                    style="@style/ExitButton"
                     android:onClick="exitApp"
-                    android:textStyle="bold"
-                    android:textColor="#1b5e20"
                     android:text="@string/exit_button" />
             </RelativeLayout>
         </LinearLayout>
